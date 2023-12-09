@@ -9,12 +9,19 @@
     background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(Imagenes/FondWeb\ \(3\).jpg);
     background-position: center;
     background-size: cover;
-    height: 94vh;
+    height: 95vh;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: scroll;
+    
 }
 
 /* =============== Barra inicial con texto "G-NOB" ============== */
 .navbar{
-    width: 100%;
+    width: 250%;
     height: 75px;
     margin: auto;
     background-color: #110f01;
@@ -75,6 +82,11 @@
     float: left;
     height: 70px;
     justify-content: space-around;
+    position: fixed;
+    
+    right: 65%;
+    top: 20px;
+    left: 160px;
 }
 
 ul{
@@ -86,7 +98,7 @@ ul{
 
 ul li{
     list-style: none;
-    margin-left: 60px;
+    margin-left: 50px;
     margin-top: 27px;
     font-size: 16px;
     width: 60px;
@@ -100,31 +112,40 @@ ul li a{
     font-family: Arial;
     font-weight: bold;
     align-content: right;
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 ul li a:hover{
     color: #edd20a;
+    background: #000;
+    opacity: 90%;
+    border-radius: 25px;
+    padding: 3.5px;
 }
 
-/* ======Parte del buscador de texto ============== */
+/* ======Parte del buscador de texto en la parte superior derecha ============== */
 .Buscar{
     width: 330px;
     float: left;
     margin-left: 270px;
     padding-top: 10px;
+    position: absolute;
 }
 
 .srch{
-    font-family:'Lucida Sans';
-    width: 150px;
+    font-family:Verdana;
+    font-size: 12px;
+    width: 20%;
     height: 20px;
+    position: absolute;
     background: transparent;
+    opacity: 100%;
     border: 1.5px solid #9f9a9a;
+    border-radius: 0 15px 15px 0;
     margin-top: 13px;
     text-align: center;
+    right: 5%;
     color: #fff;
-    font-size: 12px;
     float: left;
     padding: 10px;
     padding-top: 10px;
@@ -141,22 +162,24 @@ ul li a:hover{
 }
 
 
-
+/* ==========Palabra Buscar del botón Buscar======== */
 .btn{
     width: 50px;
     height: 22px;
     background: linear-gradient(to right, #110f01, #9f9a9a);
     border: 1px solid #9f9a9a;
     margin-top: 13px;
-    color: #fff;
+    color: #f3eaea;
     font-size: 12px;
-    border-radius: 0 15px 15px 0;
+    right: 24%;
+    border-radius: 10px 15px 15px 15px;
     cursor: pointer;
+    position: absolute;
 }
 
 .btn:hover{
     background: #edd20a;
-    color: #475dec;
+    color: #000;
 }
 
 .btn:focus{
@@ -165,9 +188,9 @@ ul li a:hover{
 
 
 
-/* =============== Texto explicativo de la web ============== */
+/* == Texto explicativo de la web y su botón inferior============== */
 .content{
-    width: 1200px;
+    width: 100%;
     height: auto;
     margin: auto;
     color: #fff;
@@ -192,26 +215,30 @@ ul li a:hover{
 
 .content p a{
     color: #edd20a;
-    text-decoration: none;
+    text-decoration:underline;
 }
 
 .content p a:hover{
-    color: #475dec;
+    color: #47b2ec;
 }
 
 .content .cn{
-    width: 160px;
+    width: 180px;
     height: 40px;
     background:linear-gradient(to right, #47b2ec, #9f9a9a);
-    border-radius: 18px;
-    border-radius: 10px;
-    cursor: pointer;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+    transition: 0.4s ease-in-out;
 }
 
 .content .cn a{
+    font-size: 18px;
     text-decoration: none;
     color: #000;
     transition: .3s ease;
+    position: center;
 }
 
 .cn:hover{
@@ -219,14 +246,17 @@ ul li a:hover{
     transition: .3s ease;
 }
 
+
+/* == Texto debajo de bienvenido "...G-NOB" ============== */
 .content span{
     font-family: monospace;
     color: #edd20a;
-    font-size: 60px;
+    font-size: 50px;
 }
 
 .content span:hover{
     color: #47b2ec;
+    transition: .2s ease-in;
 }
 
 /* ==== Formulario de entrada de cuentas ============== */
@@ -235,11 +265,16 @@ ul li a:hover{
     height: 300px;
     background: linear-gradient(to top, rgba(0, 5, 8, 0.8)50%, rgba(0, 5, 8, 0.8)50% );
     position: absolute;
-    top: -0px;
+    top: 20px;
     left: 870px;
-    border-radius: 10px;
+    border-radius: 30px;
     padding: 30px;
+
+    display: flex;
+    flex-direction: column;
 }
+
+
 
 .form h2{
     width: 220px;
@@ -290,11 +325,12 @@ ul li a:hover{
 
 /* ======Texto notifiero de elegir tipo de cuenta ============== */
 .form h3{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:Arial;
     font-size: 14px;
     height: 2px;
     text-align: center;
     position:relative;
+    margin-top: 15px;
 }
 /* ===== Botones de entrada para diferentes cuentas ============== */
 .btn3{
@@ -304,7 +340,7 @@ ul li a:hover{
     border: none;
     margin-top: 30px;
     font-size: 18px;
-    border-radius: 10px;
+    border-radius: 20px;
     cursor: pointer;
     color: #fff;
     transition: 0.4s ease;
@@ -409,7 +445,10 @@ body{
 .container2{
     align-content: center;
     background: linear-gradient(to right, #9f9a9a, #000);
+    width: 100%;
     height: 50px;
+    position:fixed;
+    bottom: 0;
 }
 
 .container2 p{
