@@ -1,0 +1,579 @@
+/* Estilos generales */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: o;
+    padding: 0;
+    text-decoration: none;
+}
+
+.contenedor{
+    background-color: #3333338d;
+    border-radius: 10px;
+    
+}
+.container2{
+    background-color: #333;
+    border-radius: 10px;
+}
+
+.body{
+    background-color: #333;
+}
+
+
+/*  Imagen del fondo */
+
+/* === Logo de G-NOB MONEY del formulario1 ==== */
+.icons2 img{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: -110px;
+    padding: 16vh;
+    z-index: 1;
+
+    flex-direction: column;
+    flex: 1;
+}
+@media(max-width: 750px){
+    .icons2 img{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: -70px;
+    z-index: 1;
+    right: -15%;
+    }
+}
+
+
+/* Estilos para el menú header */
+header{
+    background-color: #110f01;
+
+    background: rgba(238, 5, 5, 0.06);
+    box-shadow: 0 4px 20px 0 rgba(246, 247, 248, 0.662);
+    border-radius: 0px;
+    border-left: 1px solid rgba(255, 255, 255, .3);
+    border-top: 10px solid rgba(255, 255, 255, 0.437)42;
+    position: initial;
+}
+
+
+
+nav ul{
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+    
+    text-align: center;
+    font-size: 24px;
+}
+
+nav li{
+    display: inline-block;
+}
+
+nav a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav a:hover{
+    color: #edd20a;
+    background: #045d8d;
+    border-radius: 10px;
+    font-size: 20px;
+    transition: 0.2s ease-out;
+}
+
+/* Menú para adaptarse a los dispositivos móviles */
+@media only screen and (max-width:750px){
+    nav ul{
+        text-align: center;
+        display: block;
+    }
+
+    nav li{
+        display: block;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+    header{
+        background-color: #0892dc;
+
+        box-shadow: 0 8px 32px 0 rgba(13, 190, 221, 0.505);
+        border-radius: 0px;
+        border-left: 1px solid rgba(255, 255, 255, .3);
+        border-top: 1px solid rgba(255, 255, 255, 0.437)42;
+    }
+}
+
+/* Estilos para el buscador */
+.search-container{
+    float: right;
+
+
+    background: linear-gradient(to right, #110f01, #9f9a9a61);
+    border: 0.5px solid #9f9a9a98;
+    margin-top: 13px;
+    font-size: 12px;
+    border-radius: 10px 15px 15px 15px;
+    
+    margin-right: 20px;
+}
+
+.search-container input{
+    float: right;
+    padding: 6px 10px;
+    
+
+    border-radius: 10px 15px 15px 15px;
+    background: #110f0169;
+}
+
+
+.input[type=tex] {
+    padding: 6px 10px;
+    margin-top: 6px;
+    font-size: 17px;
+    border: none;
+}
+
+.search-container button{
+    float: right;
+    padding: 6px 10px;
+    
+    cursor: pointer;
+    border-radius: 10px 15px 15px 15px;
+    background: #110f01f2;
+    color: #6e6c6c;
+}
+
+
+/*  Cuerpo "contenido1" y formulario de subcripción/entradas */
+.contenedor{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+.contenido1 p{
+    font-size: 28px;
+}
+
+
+.formulario1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #333;
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    margin: 60px;
+    height: 50%;
+    flex: 1;
+
+    background: rgba(255,255,255,0.06);
+    box-shadow: 0 20px 32px 0 rgba(157, 144, 4, 0.37);
+    border-radius: 30px;
+    border-left: 5px solid rgba(255, 255, 255, .3);
+    border-top: 3px solid rgba(255, 255, 255, 0.381);
+}
+
+.formulario1 input{
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;  
+}
+
+
+.formulario1 h2{
+    color: #fff;
+    background: #edd20a;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.formulario1 h2:hover{
+    color: #edd20a;
+    background: #47b2ec;
+    transition: 0.3s ease;
+}
+
+.formulario1 h3{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+
+.formulario1 h4{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #47b2ec;
+    font-size: 12px;
+}
+
+.formulario1 button{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    background-color: #6e6c6c;
+    font-size: 22px;
+    top: center;
+    cursor: pointer;
+
+    align-items: center;
+}
+.formulario1 button:hover{
+    background: linear-gradient(to right, #0a19ed8d, #fff);
+   color: #f12850;
+   font-size: 28px;
+   transition: 0.2s ease;
+}
+.formulario1 button a{
+    color: #edd20a;
+    text-decoration: none;
+}
+
+@media(max-width: 750px){
+    .contenedor{
+        flex-direction: column;
+    }
+
+    .contenido1 p{
+        font-size: 18px;
+    }
+
+
+    .formulario1 h3{
+        font-size: 12px;
+    }
+
+    .formulario1 h2{
+        color: #fff;
+        background: #47b2ec;
+        border-radius: 5px;
+        padding: 20px;
+    }
+    
+    .formulario1 button a{
+        color: #47b2ec;
+    }
+}
+
+
+/* == Cuerpo o "contenido1" de la web: su botón inferior============== */
+.contenido1{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    color: #fff;
+    position:initial;
+
+    flex: 1;
+}
+
+.contenido1 .par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+.contenido1 h1 span{
+    font-family: Verdana;
+    font-size: 40px;
+    color: #edd20a;
+}
+.contenido1 h1 span:hover{
+    color: #47b2ec;
+    transition: 0.2s ease-in;
+}
+
+.contenido1 h1{
+    font-family: Verdana;
+    font-size: 30px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+
+.contenido1 p a{
+    color: #edd20a;
+    text-decoration:underline;
+}
+
+.contenido1 p a:hover{
+    color: #47b2ec;
+}
+
+.contenido1 .cn{
+    width: 180px;
+    height: 40px;
+    background:linear-gradient(to right, #47b2ec, #9f9a9a);
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.contenido1 .cn a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #000;
+    transition: .3s ease;
+    position: center;
+}
+
+.cn:hover{
+    background: linear-gradient(to right, #edd20a, #fff);
+    transition: .3s ease;
+}
+
+
+/* == Texto debajo de bienvenido "...G-NOB" ============== */
+.content span{
+    font-family: monospace;
+    color: #edd20a;
+    font-size: 50px;
+}
+
+.content span:hover{
+    color: #47b2ec;
+    transition: .2s ease-in;
+}
+
+
+
+
+/* ==== Formulario de entrada de cuentas 
+.form{
+    width: 15rem;
+    height: 20rem;
+    
+    
+    flex-direction: column;
+    background: rgba(255,255,255,0.06);
+    box-shadow: 0 8px 70px 0 rgba(81, 90, 211, 0.37);
+    border-radius: 30px;
+    border-left: 4px solid rgba(255, 255, 255, .3);
+    border-top: 1px solid rgba(255, 255, 255, .3);
+    
+    position: absolute;
+    top: 20px;
+    left: 60rem;
+    padding: 30px;
+    display: flex;
+}
+
+
+
+.form h2{
+    width: 13rem;
+    height: 3rem;
+    font-family: sans-serif;
+    text-align: center;
+    color: #000;
+    font-size: 22px;
+    background-color: #edd20a;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+
+.form h2:hover{
+    color:#fff;
+    background: #47b2ec;
+}
+                                    ============== */
+
+
+/* ===== Se ha eliminado esta parte en HTML5 ============== */
+.form input{
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid #edd20a;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+
+.form input:focus{
+    outline: none;
+}
+::placeholder{
+    color: #9f9a9a;
+    font-family: Arial;
+}
+
+.form input:hover{
+    background: #f8f6f665;
+    border-radius: 5px 5px;
+    transition: 0.4s ease;
+}
+
+
+/* ===== Botones de entrada para diferentes cuentas ============== */
+.btn3{
+    width: 240px; 
+    height: 40px;
+    background: linear-gradient(to right, #47b2ec, #9f9a9a);
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease;
+}
+
+.btn3:hover{
+    background: linear-gradient(to right, #edd20a, #fff);
+}
+
+.btn3 a{
+    text-decoration: none;
+    color: #000;
+    font-size: bold;
+}
+
+/* =======Parte eliminada en HTML5 ============== */
+.form .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.form .link a{
+    text-decoration: none;
+    color: #edd20a;
+}
+
+.liw{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+
+/* ====Son iconos de redes sociales ============== */
+.icon a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    padding-top: 50px;
+    border-radius: 30px;
+    padding: 12px;
+    z-index: cover;
+}
+
+.con .ion-ion{
+    color: #f12850;
+    font-size: 30px;
+    padding-left: 14px;
+    padding-top: 5px;
+    transition: 0.3s ease;
+}
+
+.icon a:hover{
+    color: #edd20a;
+}
+
+@media (min-widht:1000){
+    .form{
+        background-position-x: calc(100vw - 800px); 
+    }
+}
+
+/* =======Parte eliminada en HTML5 ============== */
+.caracteristicas{
+    background-image: url(Imagenes/FondWeb\ \(3\).jpg);
+    background-repeat: no-repeat;
+    background-size: 500px 400px;
+    background-position: calc(100vw - 500px) 120px;
+}
+
+
+
+@media (min-widht:1000){
+    #caracteristicas{
+        background-position-x: calc(100vw - 800px); 
+    }
+}
+
+body{
+    margin: 0;
+    font-family: Verdana;
+    justify-content: center;
+    color: #fff;
+    background-color: #000;
+}
+
+/* ======= Texto e iconos al final (Seguro, Rápido,... ============== */
+.container2 ul{
+    font-family: Arial;
+    color: #fff;
+    align-content: center;
+
+}
+
+.container2 ul li{
+   text-align: center;
+   font-size: 24px;
+   height: 90px;
+   
+   display: inline-block;
+   padding: 50px;
+   width: 30px;
+
+   align-items: center;
+   align-content: center;
+}
+
+@media(max-widht: 750){
+    .container2 ul li{
+        padding: 20px;
+    }
+}
+
+/* =======Pie de página ============== */
+.container3{
+    align-content: center;
+    background: linear-gradient(to right, #47b2ec, #045d8d);
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    font-size: 18px;
+    line-height: 0.2px;
+    position:end;
+    
+    margin-top: 1px;
+    text-align: end;
+    position: fixed;
+}
+
+.container3 p{
+    color: #000;
+    text-align: center;
+}
+.container3 span{
+    color: #110f01;
+    
+}
